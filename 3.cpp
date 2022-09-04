@@ -6,7 +6,7 @@ int main()
     char answ1, answ2, answ3;
     std::cout << "Is it day?(Y/N)\n";
     std::cin >> answ1;
-    std::cout << "Are curtains open?(Y/N)\n"
+    std::cout << "Are curtains open?(Y/N)\n";
     std::cin >> answ2;
     std::cout << "Is lamp turned on?(Y/N)\n";
     std::cin >> answ3;
