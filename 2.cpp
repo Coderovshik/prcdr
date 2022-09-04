@@ -20,9 +20,14 @@ int main()
     else
     {
         float d = pow(b, 2) - 4 * a * c;
-        float x1 = (-b + sqrt(d)) / (2 * a);
-        float x2 = (-b - sqrt(d)) / (2 * a);
-        std::cout << "x1: " << x1 << ' ' << "x2: " << x2 << '\n';
+        if (d < 0)
+            std::cout << "no solutins\n";
+        else
+        {
+            float x1 = (-b + sqrt(d)) / (2 * a);
+            float x2 = (-b - sqrt(d)) / (2 * a);
+            std::cout << "x1: " << x1 << ' ' << "x2: " << x2 << '\n';
+        }
     }
 
     return 0;
